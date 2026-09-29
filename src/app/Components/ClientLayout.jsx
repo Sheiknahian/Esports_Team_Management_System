@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 import ClickEffect from "./ClickEffect";
 
 export default function ClientLayout({ children }) {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   return (
     <ThemeProvider>
