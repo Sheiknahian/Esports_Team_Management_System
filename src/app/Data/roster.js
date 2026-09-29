@@ -1,0 +1,47 @@
+export const roster = [
+  {
+    id: 1,
+    name: "VEX",
+    role: "RUSHER",
+    class: 'text-red-500',
+    number: "01",
+    image: "/player1.jpg",
+    status: "ACTIVE",
+  },
+  {
+    id: 2,
+    name: "RAZE",
+    role: "SNIPER",
+    class: 'text-blue-500',
+    number: "02",
+    image: "/player2.jpg",
+    status: "ACTIVE",
+  },
+  {
+    id: 3,
+    name: "NOVA",
+    role: "SUPPORT",
+    class: 'text-green-500',
+    number: "03",
+    image: "/player3.jpg",
+    status: "ACTIVE",
+  },
+  {
+    id: 4,
+    name: "KRYPT",
+    role: "BOMBER",
+    class: 'text-[#FACC15]',
+    number: "04",
+    image: "/player4.jpg",
+    status: "ACTIVE",
+  },
+  {
+    id: 5,
+    name: "ZENO",
+    role: "ASSAULT",
+    class: 'text-purple-500',
+    number: "05",
+    image: "/player5.jpg",
+    status: "ACTIVE",
+  }
+];

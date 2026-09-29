@@ -1,4 +1,15 @@
 @import "tailwindcss";
+@custom-variant light (&:where([data-theme="light"], [data-theme="light"] *));
+
+
+@import "tailwindcss";
+
+@theme {
+  --font-bebas: var(--font-bebas);
+  --font-rajdhani: var(--font-rajdhani);
+  --font-inter: var(--font-inter);
+  --font-orbitron: var(--font-orbitron);
+}
 
 :root {
   --background: #ffffff;
@@ -14,7 +25,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: black;
     --foreground: #ededed;
   }
 }
@@ -23,4 +34,63 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+}
+.group:hover .animate-slide {
+  animation-play-state: paused;
+}
+
+.click-ripple {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #a855f7;
+  border-radius: 9999px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: clickRipple 0.6s ease-out forwards;
+  z-index: 9999;
+}
+
+@keyframes clickRipple {
+  0% {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+  }
+
+  100% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+}
+
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 20px;
+  background-color: bl;
+}
+
+.swiper-pagination-bullet {
+  background: #a88bbd !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #facc15 !important;
+  opacity: 1 !important;
 }
