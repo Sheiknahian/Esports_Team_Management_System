@@ -27,6 +27,11 @@ const orbitron = Orbitron({
   variable: "--font-orbitron",
 });
 
+export const metadata = {
+  title: "VYRON ESPORTS",
+  description: "Explore VYRON, know the team.",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html
